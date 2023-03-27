@@ -7,7 +7,6 @@ export const initialState: DashboardState = {
   isLoading: false,
   files: [],
   devices: [],
-  //progressBars: {},
   error: null,
 };
 

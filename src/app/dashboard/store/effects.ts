@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { catchError, map, mergeMap, of, tap } from 'rxjs';
-import { Device } from '../models/device.model';
+import { catchError, map, mergeMap, of } from 'rxjs';
 import { DataService } from '../services/data.service';
 
 import * as DashboardActions from './actions';
