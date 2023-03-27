@@ -1,0 +1,12 @@
+.device-container {
+  &__name {
+    margin: 1rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  &__files {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}

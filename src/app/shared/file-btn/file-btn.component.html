@@ -1,0 +1,9 @@
+<button
+  class="file-btn"
+  [disabled]="disabled"
+  (click)="checkFile()"
+  [ngClass]="{ checked: checked }"
+>
+  <div class="file-btn__text">{{ name }}</div>
+  <app-progress-bar *ngIf="disabled" [progress]="progress"></app-progress-bar>
+</button>

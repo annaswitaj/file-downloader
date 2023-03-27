@@ -1,0 +1,19 @@
+<div class="dashboard" *ngIf="(devices$ | async) && (files$ | async)">
+  <div class="dashboard-content">
+    <div class="dashboard-content__files">
+      <app-file-btn
+        *ngFor="let file of files$ | async"
+        [name]="file.name"
+        (click)="addFileToDevice(file)"
+      ></app-file-btn>
+    </div>
+    <div class="dashboard-content__devices">
+      <app-device-container
+        *ngFor="let device of devices$ | async"
+        [device]="device"
+        [filesDict]="filesDict"
+      >
+      </app-device-container>
+    </div>
+  </div>
+</div>

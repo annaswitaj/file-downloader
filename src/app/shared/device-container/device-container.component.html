@@ -1,0 +1,12 @@
+<div class="device-container">
+  <div class="device-container__name">{{ device.name }}</div>
+  <div class="device-container__files">
+    <ng-container *ngFor="let file of device.files">
+      <app-file-btn
+        [name]="getFileNameById(file.id)"
+        [disabled]="true"
+        [progress]="file.progress"
+      ></app-file-btn>
+    </ng-container>
+  </div>
+</div>
