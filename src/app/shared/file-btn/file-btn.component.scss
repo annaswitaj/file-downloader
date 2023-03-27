@@ -1,4 +1,5 @@
 @import '_variables';
+
 .file-btn {
   border: $border-color 0.2rem solid;
   padding: 0.5rem;
@@ -14,16 +15,16 @@
   &:hover {
     cursor: pointer;
     background-color: $background-color;
-    color: white;
+    color: $text-checked-color;
   }
   &:disabled {
-    color: black;
+    color: $text-disabled-color;
     pointer-events: none;
   }
 }
 
 .checked {
   background-color: $background-color;
-  color: white;
+  color: $text-checked-color;
   pointer-events: none;
 }
